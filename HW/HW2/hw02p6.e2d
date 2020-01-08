@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state>
+<links>
+</links>
+<model>
+<timestep>5.0</timestep>
+<sun_angle>1.5707964</sun_angle>
+<solar_power_density>2000.0</solar_power_density>
+<solar_ray_count>24</solar_ray_count>
+<solar_ray_speed>0.1</solar_ray_speed>
+<photon_emission_interval>20</photon_emission_interval>
+<gravitational_acceleration>9.8</gravitational_acceleration>
+<thermophoretic_coefficient>0.0</thermophoretic_coefficient><particle_drag>0.01</particle_drag><particle_hardness>1.0E-6</particle_hardness><z_heat_diffusivity>0.0</z_heat_diffusivity><z_heat_diffusivity_only_for_fluid>false</z_heat_diffusivity_only_for_fluid><convective>false</convective>
+<background_conductivity>1.0E-9</background_conductivity>
+<background_specific_heat>1.0</background_specific_heat>
+<thermal_expansion_coefficient>2.5E-4</thermal_expansion_coefficient>
+<buoyancy_approximation>0</buoyancy_approximation>
+<boundary>
+<flux_at_border upper="0.0" lower="0.0" left="0.0" right="0.0"/>
+<mass_flow_at_border upper="0" lower="0" left="0" right="0"/>
+</boundary>
+<structure>
+<part>
+<rectangle x="1.0" y="3.0" width="1.0" height="4.0"/><elasticity>0.0</elasticity>
+<thermal_conductivity>10.0</thermal_conductivity>
+<specific_heat>1.0</specific_heat>
+<density>25.0</density>
+<transmission>0.0</transmission>
+<reflection>0.0</reflection>
+<scattering>false</scattering>
+<scattering_visible>false</scattering_visible>
+<absorption>1.0</absorption>
+<emissivity>0.0</emissivity>
+<temperature>100.0</temperature>
+<constant_temperature>true</constant_temperature>
+</part>
+<part>
+<rectangle x="2.0" y="3.0" width="6.0" height="2.0"/><elasticity>0.0</elasticity>
+<thermal_conductivity>10.0</thermal_conductivity>
+<specific_heat>1.0</specific_heat>
+<density>25.0</density>
+<transmission>0.0</transmission>
+<reflection>0.0</reflection>
+<scattering>false</scattering>
+<scattering_visible>false</scattering_visible>
+<absorption>1.0</absorption>
+<emissivity>0.0</emissivity>
+<temperature>50.0</temperature>
+<constant_temperature>false</constant_temperature>
+<uid>A</uid>
+<filled>false</filled>
+<label>A</label>
+</part>
+<part>
+<rectangle x="2.0" y="5.0" width="6.0" height="2.0"/><elasticity>1.0</elasticity>
+<thermal_conductivity>10.0</thermal_conductivity>
+<specific_heat>1.0</specific_heat>
+<density>25.0</density>
+<transmission>0.0</transmission>
+<reflection>0.0</reflection>
+<scattering>false</scattering>
+<scattering_visible>false</scattering_visible>
+<absorption>1.0</absorption>
+<emissivity>0.0</emissivity>
+<temperature>50.0</temperature>
+<constant_temperature>false</constant_temperature>
+<filled>false</filled>
+<label>B</label>
+</part>
+<part>
+<rectangle x="8.0" y="3.0" width="1.0" height="4.0"/><elasticity>0.0</elasticity>
+<thermal_conductivity>10.0</thermal_conductivity>
+<specific_heat>1.0</specific_heat>
+<density>25.0</density>
+<transmission>0.0</transmission>
+<reflection>0.0</reflection>
+<scattering>false</scattering>
+<scattering_visible>false</scattering_visible>
+<absorption>1.0</absorption>
+<emissivity>0.0</emissivity>
+<temperature>0.0</temperature>
+<constant_temperature>true</constant_temperature>
+</part>
+</structure>
+<environment>
+</environment>
+<sensor>
+<thermometer x="8.5" y="4.75"/>
+<thermometer x="1.5" y="4.75"/>
+<thermometer x="5.0" y="4.75"/>
+<heat_flux_sensor angle="1.5707964" x="7.5" y="4.0"/>
+<heat_flux_sensor angle="1.5707964" x="7.5" y="6.0"/>
+<heat_flux_sensor angle="1.5707964" x="2.5" y="4.0"/>
+<heat_flux_sensor angle="1.5707964" x="2.5" y="6.0"/>
+<heat_flux_sensor angle="0.0" x="3.0" y="5.0"/>
+<heat_flux_sensor angle="0.0" x="7.0" y="5.0"/>
+</sensor>
+<controller>
+</controller>
+</model>
+<view>
+<snap_to_grid>true</snap_to_grid>
+<grid_size>10</grid_size>
+<graph_data_type>1</graph_data_type>
+<perimeter_step_size>0.049999997</perimeter_step_size>
+<border_tickmarks>true</border_tickmarks>
+<color_palette>true</color_palette>
+<color_palette_type>0</color_palette_type>
+<control_panel>true</control_panel>
+<color_palette_x>0.0</color_palette_x><color_palette_y>0.0</color_palette_y><color_palette_w>0.0</color_palette_w><color_palette_h>0.0</color_palette_h><minimum_temperature>-50.0</minimum_temperature>
+<maximum_temperature>150.0</maximum_temperature>
+<fan_rotation_speed_scale_factor>1.0</fan_rotation_speed_scale_factor><heat_flux_line>true</heat_flux_line>
+<graph_xlabel>Time (hr)</graph_xlabel><graph_ylabel>Heat flux (W/m²)</graph_ylabel><smooth>false</smooth>
+</view>
+</state>
